@@ -17,6 +17,9 @@ public class Precios {
     @GeneratedValue( strategy= GenerationType.IDENTITY )
     private Long id;
 
+    @Column(name = "brand_id")
+    private Integer brand_id;
+
     @Column(name="start_date")
     private String start_date;
 
