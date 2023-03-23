@@ -21,6 +21,9 @@ mvnw
 .rar
 .tar.gz
 
+# Compiled class files
+.class
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
