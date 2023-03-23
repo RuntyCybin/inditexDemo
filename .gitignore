@@ -13,6 +13,14 @@ mvnw
 .springBeans
 .sts4-cache
 
+# Package files
+.jar
+.war
+.ear
+.nar
+.rar
+.tar.gz
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
