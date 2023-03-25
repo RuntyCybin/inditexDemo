@@ -45,7 +45,10 @@ Exceptions :
         "message": "No se encontraron precios con estos parametros"
     }
 
-OpenAPI
+OpenAPI : 
+    Uso OpenAPI ya que en las version de Spring posteriores a la 3 utilizan los namespaces de jakarta en vez de 
+    javax y swagger solamente funciona con javax
+    La url del Open API es : http://localhost:8080/swagger-ui/
 
 Validators : 
     Para la validacion de los DTOs utilize el artefact de validacion del framework de Spring,
