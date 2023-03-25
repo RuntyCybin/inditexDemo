@@ -2,6 +2,7 @@ package com.demo.inditex.demoinditex.controller;
 
 import com.demo.inditex.demoinditex.dto.PriceRequestDTO;
 import com.demo.inditex.demoinditex.dto.PriceResponseDTO;
+import com.demo.inditex.demoinditex.exception.PrecioNotFoundException;
 import com.demo.inditex.demoinditex.service.PrecioService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class PreciosController {
 
     @GetMapping("/validatePrices")
     public ResponseEntity<List<PriceResponseDTO>> getPrices(
-            @RequestBody @Valid PriceRequestDTO priceRequestDTO) {
+            @RequestBody @Valid PriceRequestDTO priceRequestDTO) throws PrecioNotFoundException {
         return new ResponseEntity<>(precioService.validate(priceRequestDTO), HttpStatus.OK);
     }
 }
