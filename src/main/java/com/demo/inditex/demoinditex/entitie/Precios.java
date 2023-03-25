@@ -2,11 +2,12 @@ package com.demo.inditex.demoinditex.entitie;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -21,10 +22,10 @@ public class Precios {
     private Integer brand_id;
 
     @Column(name="start_date")
-    private String start_date;
+    private LocalDateTime start_date;
 
     @Column(name="end_date")
-    private String end_date;
+    private LocalDateTime end_date;
 
     @Column(name="price_list")
     private Long price_list;
@@ -33,7 +34,7 @@ public class Precios {
     private Long priority;
 
     @Column(name="precio")
-    private Long precio;
+    private Double precio;
 
     @Column(name="curr")
     private String curr;
