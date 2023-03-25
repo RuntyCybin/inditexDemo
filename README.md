@@ -33,3 +33,10 @@ Al utilizar jdk17 use elementos del stream como getList()
 Capa de testing se realizo con tests de integracion usando Rest Assured
 
 
+
+Exceptions
+
+OpenAPI
+
+Validators : 
+    For validation of the DTOs' I used spring validation plugin
